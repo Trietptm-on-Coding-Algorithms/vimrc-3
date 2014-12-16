@@ -10,7 +10,12 @@
 " ------------- general ----------------------
 set nocompatible              " be iMproved, required
 filetype off                  " required
-
+set ts=4
+set expandtab
+set nobackup
+set nowritebackup
+" set noswapfile
+set wrapscan
 " ------------- colorscheme ------------------
 colorscheme torte
 
@@ -35,8 +40,8 @@ Plugin 'gmarik/Vundle.vim'
 
 " ---------------- NERDTree -----------------
 " https://github.com/scrooloose/nerdtree
-autocmd vimenter * NERDTree
-"autocmd vimenter * if !argc() | NERDTree | endif
+"autocmd vimenter * NERDTree
+autocmd vimenter * if !argc() | NERDTree | endif
 Plugin 'scrooloose/nerdtree'
 map <F2> :NERDTreeToggle<CR>
 
