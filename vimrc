@@ -14,10 +14,14 @@ set ts=4
 set expandtab
 set nobackup
 set nowritebackup
+set cursorcolumn
+set cursorline
 " set noswapfile
 set wrapscan
-" ------------- colorscheme ------------------
-colorscheme torte
+
+" code indent
+"set fdm=indent
+"
 
 " --------------------------------------------
 "Highlight excess line length
@@ -37,6 +41,14 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+
+" ---------------- molokai ------------------
+Plugin 'tomasr/molokai'
+let g:molokai_original = 1
+let g:rehash256 = 1
+
+" ------------- colorscheme ------------------
+" colorscheme torte
 
 " ---------------- NERDTree -----------------
 " https://github.com/scrooloose/nerdtree
@@ -119,6 +131,29 @@ set t_Co=256
 " Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Avoid a name conflict with L9
 " Plugin 'user/L9', {'name': 'newL9'}
+
+" ------------- ctrlp -----------------------
+Plugin '/kien/ctrlp.vim'
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+
+" -------------- vim-markdown --------------
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
+let g:vim_markdown_folding_disabled = 1
+
+" -------------- powerline -> airline -------
+Plugin 'bling/vim-airline'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+
+" ---------------nerdcommenter--------------
+Plugin 'scrooloose/nerdcommenter'
+" <leader>+c+space ---- \ + c + space
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
