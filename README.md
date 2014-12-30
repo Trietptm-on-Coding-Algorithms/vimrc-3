@@ -20,15 +20,15 @@ pretty-vim
 
 # Install:
 
->    \$ su root
->    \$ git clone https://github.com/all3g/pretty-vim ~/.vim
->    \$ cp ~/.vim ~/.vimrc
->    \$ pip install git+git://github.com/Lokaltog/powerline
->    \$ wget --no-check-certificate https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
->    \$ wget --no-check-certificate https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
->    \$ mv PowerlineSymbols.otf /usr/share/fonts/
->    \$ mv 10-powerline-symbols.conf /etc/fonts/conf.d/
->    \$ fc-cache -vf
+>    $ su root
+>    $ git clone https://github.com/all3g/pretty-vim ~/.vim
+>    $ cp ~/.vim ~/.vimrc
+>    $ pip install git+git://github.com/Lokaltog/powerline
+>    $ wget --no-check-certificate https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
+>    $ wget --no-check-certificate https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
+>    $ mv PowerlineSymbols.otf /usr/share/fonts/
+>    $ mv 10-powerline-symbols.conf /etc/fonts/conf.d/
+>    $ fc-cache -vf
 
 
 ----------
