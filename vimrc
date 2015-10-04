@@ -18,6 +18,7 @@ set cursorcolumn
 set cursorline
 " set noswapfile
 set wrapscan
+set pastetoggle=<F3>
 
 " code indent
 "set fdm=indent
