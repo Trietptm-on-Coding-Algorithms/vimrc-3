@@ -1,6 +1,8 @@
 ### pretty-vim
 =======================
 
+![](https://github.com/all3g/pretty-vim/blob/master/vim_editor.png)  
+
 ####  Description:
 
 Custom vim configuration for programming, ex: Python  and so.  
