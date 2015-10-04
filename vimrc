@@ -11,14 +11,24 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set ts=4
-set expandtab
 set nobackup
 set nowritebackup
 set cursorcolumn
 set cursorline
 " set noswapfile
-set wrapscan
+" set wrapscan
 set pastetoggle=<F3>
+
+" https://github.com/rapid7/metasploit-framework/wiki/Style-Tips
+if !exists("au_loaded")
+    let au_loaded = 1
+    augroup rb
+        au FileType ruby set shiftwidth=2 tabstop=2 softtabstop=2 textwidth=78
+        au FileType ruby set expandtab
+        au FileType ruby hi BogusWhitespace ctermbg=darkgreen guibg=darkgreen
+        au FileType ruby match BogusWhitespace /\s\+$\|^\t\+ \+\|^ \+\t\+/
+    augroup END
+endif
 
 " code indent
 "set fdm=indent
@@ -50,6 +60,7 @@ let g:rehash256 = 1
 
 " ------------- colorscheme ------------------
 " colorscheme torte
+colorscheme slate
 
 " ---------------- NERDTree -----------------
 " https://github.com/scrooloose/nerdtree
@@ -70,13 +81,9 @@ Plugin 'klen/python-mode'
 " ]]           Jump on next class or function (normal, visual, operator modes)
 "[M           Jump on previous class or method (normal, visual, operatormodes)
 " ]M           Jump on next class or method (normal, visual, operator modes)
-
-" enable code auto completion
+"
 " let g:pymode_rope = 1
-
-" disable code auto completion
 let g:pymode_rope = 0
-
 "
 " Documentation
 let g:pymode_doc = 1
