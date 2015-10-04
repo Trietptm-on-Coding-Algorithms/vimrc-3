@@ -35,11 +35,26 @@ Vim can be a hackable editor, and custom vim configuration for programming, ex: 
 - [vim-markdown](http://github.com/godlygeek/tabular)  
 - [vim-markdown](http://github.com/plasticboy/vim-markdown)  
 
-  
+
+**Clone pretty-vim**
+
 ```
-$ su root  
 $ git clone https://github.com/all3g/pretty-vim ~/.vim  
-$ cp ~/.vim ~/.vimrc  
+```
+
+**Set a new vimrc configutation file**
+
+When we run vim command in terminator, it loads ~/.vimrc. **Pretty-vim** gives us a demo for python / ruby / php.
+
+```
+$ cp ~/.vim/vimrc ~/.vimrc  
+```
+
+**Powerline**
+
+Powerline is a statusline plugin for vim, and provides statuslines and prompts for several other applications, including zsh, bash, tmux, IPython, Awesome and Qtile.
+
+```
 $ pip install git+git://github.com/Lokaltog/powerline  
 $ wget --no-check-certificate https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf  
 $ wget --no-check-certificate https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf  
@@ -47,5 +62,3 @@ $ mv PowerlineSymbols.otf /usr/share/fonts/
 $ mv 10-powerline-symbols.conf /etc/fonts/conf.d/  
 $ fc-cache -vf  
 ```
-
-
