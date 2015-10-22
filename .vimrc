@@ -168,6 +168,18 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 Plugin 'scrooloose/nerdcommenter'
 " <leader>+c+space ---- \ + c + space
 
+" ----------------- taglist -----------------
+Plugin 'vim-scripts/taglist.vim'
+let Tlist_Auto_Open=1
+let Tlist_Show_One_FIle=1
+let Tlist_WinWidth=40
+let Tlist_Exit_OnlyWindow=1
+let Tlist_Use_Right_Window=1
+let Tlist_Ctags_Cmd="/usr/bin/ctags"
+set autochdir
+nnoremap <F12> :TlistToggle<CR>
+" Please install ctags 
+" https://github.com/VundleVim/Vundle.vim/issues/152
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -183,13 +195,4 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
-" ----------------- taglist -----------------
-let Tlist_Auto_Open=1
-let Tlist_Show_One_FIle=1
-let Tlist_WinWidth=40
-let Tlist_Exit_OnlyWindow=1
-let Tlist_Use_Right_Window=1
-let Tlist_Ctags_Cmd="/usr/bin/ctags"
-set autochdir
 
