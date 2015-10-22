@@ -1,4 +1,4 @@
-" -------------- good resources --------------
+" -------------- GOOD Resources --------------
 " Vundle      ---- https://github.com/gmarik/Vundle.vim
 " NERDTree    ---- https://github.com/scrooloose/nerdtree
 " python-mode ---- https://github.com/klen/python-mode
@@ -6,6 +6,7 @@
 " taglists    ---- http://www.vim.org/scripts/script.php?script_id=273
 " powerline   ---- http://blog.geek.be/vim-powerline-quicky/
 " [py-ide]    ---- http://unlogic.co.uk/2013/02/08/vim-as-a-python-ide/
+" vim-multiple-cursors   ---- https://github.com/terryma/vim-multiple-cursors
 
 " ------------- general ----------------------
 set nocompatible              " be iMproved, required
@@ -148,7 +149,7 @@ set t_Co=256
 
 " ------------- ctrlp -----------------------
 Plugin 'kien/ctrlp.vim'
-let g:ctrlp_map = '<c-p>'
+let g:ctrlp_map = '<c-o>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 
@@ -177,9 +178,15 @@ let Tlist_Exit_OnlyWindow=1
 let Tlist_Use_Right_Window=1
 let Tlist_Ctags_Cmd="/usr/bin/ctags"
 set autochdir
-nnoremap <F12> :TlistToggle<CR>
+nnoremap <c-f> :TlistToggle<CR>
 " Please install ctags 
 " https://github.com/VundleVim/Vundle.vim/issues/152
+
+" ----------------- 
+Plugin 'terryma/vim-multiple-cursors'
+" https://github.com/terryma/vim-multiple-cursors
+
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
