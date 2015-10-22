@@ -47,7 +47,9 @@ $ git clone https://github.com/all3g/pretty-vim ~/.vim
 When we run vim command in terminator, it loads ~/.vimrc. **Pretty-vim** gives us a demo for python / ruby / php.
 
 ```
-$ cp ~/.vim/vimrc ~/.vimrc  
+$ cp ~/.vim/.vimrc ~/.vimrc
+$ vim
+:PluginInstall
 ```
 
 **Powerline**

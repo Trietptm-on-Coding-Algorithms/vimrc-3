@@ -147,7 +147,7 @@ set t_Co=256
 " Plugin 'user/L9', {'name': 'newL9'}
 
 " ------------- ctrlp -----------------------
-Plugin '/kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
