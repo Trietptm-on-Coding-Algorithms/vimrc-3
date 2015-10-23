@@ -24,22 +24,23 @@ The best is to use :help in Vim. If you don't have an executable yet, read runti
 
 Vim can be a hackable editor, and custom vim configuration for programming, ex: Python, Ruby, PHP and so.  Plugins as follow: 
 
-- [Vundle](https://github.com/gmarik/Vundle.vim)  
-- [NERDTree](https://github.com/scrooloose/nerdtree)  
-- [python-mode](https://github.com/klen/python-mode)  
-- [powerline](https://github.com/Lokaltog/powerline)  
-- [powerline](http://blog.geek.be/vim-powerline-quicky/)
-- [molokai](http://github.com/tomasr/molokai)  
-- [nerdcommenter](http://github.com/scrooloose/nerdcommenter)  
-- [vim-airline](http://github.com/bling/vim-airline)  
-- [vim-markdown](http://github.com/godlygeek/tabular)  
-- [vim-markdown](http://github.com/plasticboy/vim-markdown)  
-
+https://github.com/gmarik/Vundle.vim
+https://github.com/tomasr/molokai
+https://github.com/klen/python-mode
+https://github.com/scrooloose/nerdtree
+https://github.com/kien/ctrlp.vim
+https://github.com/godlygeek/tabular
+https://github.com/plasticboy/vim-markdown
+https://github.com/bling/vim-airline
+https://github.com/scrooloose/nerdcommenter
+https://github.com/vim-scripts/taglist.vim
+https://github.com/terryma/vim-multiple-cursors
+https://github.com/tpope/vim-fugitive
 
 **Clone pretty-vim**
 
 ```
-$ git clone https://github.com/all3g/pretty-vim ~/.vim  
+$ git clone https://github.com/all3g/pretty-vim /tmp
 ```
 
 **Set a new vimrc configutation file**
@@ -47,20 +48,11 @@ $ git clone https://github.com/all3g/pretty-vim ~/.vim
 When we run vim command in terminator, it loads ~/.vimrc. **Pretty-vim** gives us a demo for python / ruby / php.
 
 ```
-$ cp ~/.vim/.vimrc ~/.vimrc
-$ vim
-:PluginInstall
-```
-
-**Powerline**
-
-Powerline is a statusline plugin for vim, and provides statuslines and prompts for several other applications, including zsh, bash, tmux, IPython, Awesome and Qtile.
-
-```
-$ pip install git+git://github.com/Lokaltog/powerline  
-$ wget --no-check-certificate https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf  
-$ wget --no-check-certificate https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf  
-$ mv PowerlineSymbols.otf /usr/share/fonts/  
-$ mv 10-powerline-symbols.conf /etc/fonts/conf.d/  
-$ fc-cache -vf  
+$ cd /tmp
+$ git clone https://raw.githubusercontent.com/all3g/pretty-vim/
+$ cp -f /tmp/pretty-vim/.vimrc ~/.vimrc
+$ mkdir -p ~/.vim/bundle
+$ cd ~/.vim/bundle
+$ git clone https://github.com/gmarik/Vundle.vim
+$ vim -c 'PluginInstall'
 ```
