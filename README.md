@@ -24,18 +24,18 @@ The best is to use :help in Vim. If you don't have an executable yet, read runti
 
 Vim can be a hackable editor, and custom vim configuration for programming, ex: Python, Ruby, PHP and so.  Plugins as follow: 
 
-https://github.com/gmarik/Vundle.vim
-https://github.com/tomasr/molokai
-https://github.com/klen/python-mode
-https://github.com/scrooloose/nerdtree
-https://github.com/kien/ctrlp.vim
-https://github.com/godlygeek/tabular
-https://github.com/plasticboy/vim-markdown
-https://github.com/bling/vim-airline
-https://github.com/scrooloose/nerdcommenter
-https://github.com/vim-scripts/taglist.vim
-https://github.com/terryma/vim-multiple-cursors
-https://github.com/tpope/vim-fugitive
+https://github.com/gmarik/Vundle.vim  
+https://github.com/tomasr/molokai  
+https://github.com/klen/python-mode  
+https://github.com/scrooloose/nerdtree  
+https://github.com/kien/ctrlp.vim  
+https://github.com/godlygeek/tabular  
+https://github.com/plasticboy/vim-markdown  
+https://github.com/bling/vim-airline  
+https://github.com/scrooloose/nerdcommenter  
+https://github.com/vim-scripts/taglist.vim  
+https://github.com/terryma/vim-multiple-cursors  
+https://github.com/tpope/vim-fugitive  
 
 **Clone pretty-vim**
 
