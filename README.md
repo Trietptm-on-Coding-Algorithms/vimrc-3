@@ -1,9 +1,17 @@
-### pretty-vim
+### Simple vimrc
+
 =======================
 
-#### Screenshot
+#### Screenshots
 
-![](https://github.com/all3g/pretty-vim/blob/master/vim_editor.png)  
+**Linux Screenshot**
+
+![](https://github.com/all3g/vimrc/blob/master/linux_screenshot.png)  
+
+
+**OSX Screenshot**
+
+![](https://github.com/all3g/vimrc/blob/master/osx_screenshot.png)  
 
 #### Description
 
@@ -13,11 +21,20 @@ This editor is very useful for editing programs and other plain text files. All 
 
 Vim runs under Amiga DOS, MS-DOS, MS-Windows (95, 98, Me, NT, 2000, XP, Vista, 7), Atari MiNT, Macintosh, BeOS, VMS, RISC OS, OS/2 and almost all flavours of UNIX. Porting to other systems should not be very difficult.  
 
+
 #### Documentation
 
 The vim tutor is a one hour training course for beginners. Mostly it can be started as vimtutor. See :help tutor for more information.
 
 The best is to use :help in Vim. If you don't have an executable yet, read runtime/doc/help.txt. It contains pointers to the other documentation files. The User Manual reads like a book and is recommended to learn to use Vim. See :help user-manual.
+
+Vimrc includes:
+
+- [x] Installation
+- [x] General
+- [x] Vundle - Plugins
+- [x] Plugins Keys Maps
+- [x] Plugins Settings
 
 
 #### Installation
@@ -37,10 +54,10 @@ https://github.com/vim-scripts/taglist.vim
 https://github.com/terryma/vim-multiple-cursors  
 https://github.com/tpope/vim-fugitive  
 
-**Clone pretty-vim**
+**Clone vimrc**
 
 ```
-$ git clone https://github.com/all3g/pretty-vim /tmp
+$ git clone https://github.com/all3g/vimrc /tmp
 ```
 
 **Set a new vimrc configutation file**
@@ -49,10 +66,36 @@ When we run vim command in terminator, it loads ~/.vimrc. **Pretty-vim** gives u
 
 ```
 $ cd /tmp
-$ git clone https://raw.githubusercontent.com/all3g/pretty-vim/
-$ cp -f /tmp/pretty-vim/.vimrc ~/.vimrc
+$ git clone https://github.com/all3g/vimrc/
+$ cp -f /tmp/vimrc/.vimrc ~/.vimrc
 $ mkdir -p ~/.vim/bundle
 $ cd ~/.vim/bundle
 $ git clone https://github.com/gmarik/Vundle.vim
 $ vim -c 'PluginInstall'
+```
+
+If you run it on Debian/Arch/OSX, please install **```ctags```** to enable taglist feature:
+
+- Debian Linux - ```$ sudo apt-get install ctags```
+- Arch Linux - ```$ sudo pacman -S ctags```
+- Mac OSX  - ```$ brew install ctags```
+
+
+
+#### Plugins Key Maps
+
+Default keys maps in vimrc, and you can custom it yourself.
+
+```
+map <c-n>t :NERDTreeToggle<CR>
+set pastetoggle=<c-p>t
+map <c-t>t :TlistToggle<CR>
+ 
+map <c-g>g : Gstatus<CR>
+map <c-g>l : Glog<CR>
+map <c-g>b : Gbrowse<CR>
+ 
+map <c-t>p : tabprevious<CR>
+map <c-t>n : tabnext<CR>
+map <c-t>c : tabnew<CR>
 ```
