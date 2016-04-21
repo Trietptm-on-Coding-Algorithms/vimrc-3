@@ -6,12 +6,12 @@
 
 **Linux Screenshot**
 
-![](https://github.com/all3g/vimrc/blob/master/linux_screenshot.png)  
+![](https://github.com/join-us/vimrc/blob/master/linux_screenshot.png)  
 
 
 **OSX Screenshot**
 
-![](https://github.com/all3g/vimrc/blob/master/osx_screenshot.png)  
+![](https://github.com/join-us/vimrc/blob/master/osx_screenshot.png)  
 
 #### Description
 
@@ -57,7 +57,7 @@ https://github.com/tpope/vim-fugitive
 **Clone vimrc**
 
 ```
-$ git clone https://github.com/all3g/vimrc /tmp
+$ git clone https://github.com/join-us/vimrc /tmp
 ```
 
 **Set a new vimrc configutation file**
@@ -66,7 +66,7 @@ When we run vim command in terminator, it loads ~/.vimrc. **Pretty-vim** gives u
 
 ```
 $ cd /tmp
-$ git clone https://github.com/all3g/vimrc/
+$ git clone https://github.com/join-us/vimrc/
 $ cp -f /tmp/vimrc/.vimrc ~/.vimrc
 $ mkdir -p ~/.vim/bundle
 $ cd ~/.vim/bundle
