@@ -76,9 +76,9 @@ augroup END
 "'''''''''''''''''''''''''
 
                                                                 " Global Plugins Keys Maps
-map <F2> :NERDTreeToggle<CR>     
-set pastetoggle=<F3>
-map <F4> :TlistToggle<CR>
+map <c-n>t :NERDTreeToggle<CR>
+set pastetoggle=<c-p>t
+map <c-t>t :TlistToggle<CR>
 
 map <c-g>g : Gstatus<CR>
 map <c-g>l : Glog<CR>
